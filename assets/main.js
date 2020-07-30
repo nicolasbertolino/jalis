@@ -21,7 +21,7 @@ gsap.to(".socials > *", {
 // Background text
 gsap.to(".bg-text", {
   duration: 1,
-  delay: 4,
+  delay: 3,
   opacity: 1,
   ease: "power3",
 });
