@@ -417,8 +417,8 @@ main .cards > div .card .overlay {
   background: grey;
   border-radius: 20px;
   mix-blend-mode: multiply;
-  opacity: 0;
   pointer-events: none;
+  opacity: 0;
   -webkit-transition: opacity 0.3s;
   transition: opacity 0.3s;
 }
@@ -495,7 +495,28 @@ main .cards > div .card:hover h4 {
           transition-delay: 0.3s;
 }
 
-@media screen and (max-width: 1078px) {
+@media screen and (max-width: 1024px) {
+  main .cards > div .card .overlay {
+    opacity: 1;
+  }
+  main .cards > div .card > span {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  main .cards > div .card p {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  main .cards > div .card h4 {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 1080px) {
   main {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
